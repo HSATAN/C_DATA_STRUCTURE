@@ -36,35 +36,6 @@ map.map[3][3]=0;
 MAXMIN max(AdjMap);
 void multi_short_path();
 
-
-int main(){
-	initMap();
-	int i=0,j=0;
-	for(i=0;i<N;i++)
-	for(j=0;j<N;j++){
-		if(i==j){
-			map.map[i][j]=0;
-		}
-	}
-	for(i=0;i<N;i++)
-	for(j=0;j<N;j++){
-		
-		printf("%d ",map.map[i][j]);
-		if ((j+1)%N==0 && j>0)
-			printf("\n");
-	}
-	MAXMIN max_min=max(map) ;
-	printf("min=%d  max=%d \n",max_min.min,max_min.max);
-	multi_short_path();
-	for(i=0;i<N;i++)
-	for(j=0;j<N;j++){
-		
-		printf("%d ",map.map[i][j]);
-		if ((j+1)%N==0 && j>0)
-			printf("\n");
-	}
-	return 0;
-}
 MAXMIN max(AdjMap map){
 	/*
 	这个函数找出图中的最大值和最小值 

@@ -1,9 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-
 /*
 用fleury（弗罗来算法）找欧拉回路 
-算法原理:
   Fleury算法：
    任取v0∈V(G)，令P0=v0；
 设Pi=v0e1v1e2…ei vi已经行遍，按下面方法从中选取ei+1：
